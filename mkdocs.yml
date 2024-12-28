@@ -1,0 +1,25 @@
+site_name: Upperstack Docs
+site_url: https://upperstack-team.github.io/docs/
+theme:
+  name: material
+  logo: assets/logo.png
+  language: pt-BR
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - DevOps:
+     - devops/novos-users-eks.md
+
