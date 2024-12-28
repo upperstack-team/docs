@@ -46,7 +46,3 @@ Se precisar de ajuda ou mais informações, não hesite em entrar em contato con
 ---
 
 Aproveite a leitura e boa jornada no uso das nossas ferramentas e serviços!
-
----
-
-Este é um test de CI-CD
