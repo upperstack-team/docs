@@ -1,23 +1,65 @@
 site_name: Upperstack Docs
 site_url: https://upperstack-team.github.io/docs/
+site_author: Upperstack
+site_description: >-
+  To be defined.
+
+repo_name: upperstack-team/docs
+repo_url: https://github.com/upperstack-team/docs
+
 theme:
   name: material
   logo: assets/logo.png
   language: pt-BR
-  palette: 
-
-    # Palette toggle for light mode
-    - scheme: slate
+  palette:
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-4
+        icon: material/link
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - toc.follow
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
 
+# Plugins
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+  
 nav:
   - Home: index.md
   - DevOps:
